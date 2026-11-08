@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Counter App — JavaScript Project</title>
+  
+  <!-- Favicon (ensure the file exists in the img folder) -->
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!--
+    Empty container: the ENTIRE user interface (title, display, buttons)
+    is created dynamically via JavaScript, as requested by the project.
+  -->
+  <main id="app"></main>
+
+  <!-- Fallback for users with JavaScript disabled -->
+  <noscript>
+    <p style="color: white; text-align: center; margin-top: 2rem;">
+      This application requires JavaScript to work. Please enable it in your browser.
+    </p>
+  </noscript>
+
+  <!--
+    Script loading order is CRITICAL:
+    1. counter.js -> defines the core logic
+    2. ui.js      -> defines the DOM creation and event handlers
+    3. main.js    -> connects everything and starts the app
+  -->
+  <script src="js/counter.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
